@@ -4,7 +4,7 @@ for i in range(m):
     a, b = map(int, input().split())
     r_list = n_list[a - 1 : b]
     r_list.reverse()
-    n_list = n_list[: a - 1] + r_list + n_list[b : ]
+    n_list[a-1:b] = r_list
     
 print(*n_list, sep = ' ')
 
